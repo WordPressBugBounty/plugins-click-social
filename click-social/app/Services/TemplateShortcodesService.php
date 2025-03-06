@@ -5,6 +5,7 @@ namespace Smashballoon\ClickSocial\App\Services;
 if (!defined('ABSPATH')) exit;
 
 use Smashballoon\ClickSocial\App\Core\Lib\SingleTon;
+use Smashballoon\ClickSocial\App\Core\SettingsManager;
 
 class TemplateShortcodesService
 {
@@ -16,6 +17,7 @@ class TemplateShortcodesService
 		add_shortcode('clicksocial_excerpt', [$this, 'renderPostExcerpt']);
 		add_shortcode('clicksocial_short_link', [$this, 'renderShortlink']);
 		add_shortcode('clicksocial_categories_as_hashtags', [$this, 'renderCategoriesAsHashtags']);
+		add_shortcode('clicksocial_post_link', [$this, 'renderPostlink']);
 	}
 
 	public function renderCategoriesAsHashtags()
@@ -47,17 +49,26 @@ class TemplateShortcodesService
 	{
 		global $clicksocial_post, $wp_rewrite;
 
+		// Early return if post doesn't exist
 		if (!$clicksocial_post) {
 			return false;
 		}
 
-		$clicksocialId = sbcs_get_config('shortlink_id_key');
-		if ($wp_rewrite->permalink_structure !== '') {
-			return get_site_url() . '/' . $clicksocialId . '/' . urlencode(base64_encode($clicksocial_post->ID));
+		// If shortlinks are disabled, return the permalink
+		if (SettingsManager::getInstance()->get('disable_shortlink', false)) {
+			return get_permalink($clicksocial_post->ID);
 		}
 
-		return get_site_url() . '/?' . $clicksocialId . '=' . urlencode(base64_encode($clicksocial_post->ID));
+		// Generate the shortlink (final return - this is the 3rd return)
+		$clicksocialId = sbcs_get_config('shortlink_id_key');
+		$encodedId = urlencode(base64_encode($clicksocial_post->ID));
+
+		return ($wp_rewrite->permalink_structure !== '')
+			? get_site_url() . '/' . $clicksocialId . '/' . $encodedId
+			: get_site_url() . '/?' . $clicksocialId . '=' . $encodedId;
 	}
+
+
 
 	public function renderPostTitle()
 	{
@@ -99,6 +110,17 @@ class TemplateShortcodesService
 		);
 	}
 
+	public function renderPostlink()
+	{
+		global $clicksocial_post;
+
+		if (!$clicksocial_post) {
+			return false;
+		}
+
+		return get_permalink($clicksocial_post->ID);
+	}
+
 	public function doShortcodes($templateContent)
 	{
 		// Transform user-friendly shortcodes to the actual WordPress supported shortcodes.
@@ -107,13 +129,15 @@ class TemplateShortcodesService
 				'[title]',
 				'[excerpt]',
 				'[short_link]',
-				'[categories_hashtags]'
+				'[categories_hashtags]',
+				'[post_link]'
 			],
 			[
 				'[clicksocial_title]',
 				'[clicksocial_excerpt]',
 				'[clicksocial_short_link]',
-				'[clicksocial_categories_as_hashtags]'
+				'[clicksocial_categories_as_hashtags]',
+				'[clicksocial_post_link]'
 			],
 			$templateContent
 		);

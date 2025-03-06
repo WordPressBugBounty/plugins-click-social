@@ -312,4 +312,22 @@ class SettingsController extends BaseController
 			'wpUserCaps' => WpUserCapabilities::list(),
 		]);
 	}
+
+	/**
+	 * Handle Advanced Settings page.
+	 *
+	 * @param Request $request
+	 * @return mixed
+	 */
+	public function workspaceAdvanced($request)
+	{
+		if ($request->isMethod('POST')) {
+			$disable_shortlink = (bool)$request->input('disable_shortlink', false);
+			SettingsManager::getInstance()->update('disable_shortlink', $disable_shortlink);
+		}
+
+		return Inertia::render('Settings/Workspace/Advanced', [
+			'disable_shortlink' => SettingsManager::getInstance()->get('disable_shortlink', false),
+		]);
+	}
 }

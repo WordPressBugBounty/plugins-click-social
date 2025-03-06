@@ -6,7 +6,7 @@ Tags: social media, scheduler, x, facebook, click social
 Requires at least: 6.0
 Tested up to: 6.7.2
 Requires PHP: 7.4
-Stable Tag: 1.0.6
+Stable Tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,13 @@ A: Absolutely. ClickSocial allows you to customize the scheduling for each socia
 A: We officially refer to ourselves as ClickSocial though we also refer to it as Click Social in our terms of service and other areas.
 
 == Changelog ==
+
+= 1.1.0 =
+* New: a new shortcode '[post_link]' is now available for Revival Campaign and QuickShare templates, allowing to use full post URLs
+* New: added the "Advanced Settings" page to the Workspace settings, allowing users to disable shortlinks and default to post links in Revival Campaigns and Quick Share templates
+* Tweak: improved UI/UX on multiple screens (Accounts page, Revival Campaigns, Composer, Edit Schedule)
+* Fix: fixed issue for Edit Schedule dealing with timezones, as well as the date formats
+* Fix: resolved issue with Gutenberg Editor menu unable to open
 
 = 1.0.6 =
 * New: improved onboarding for new users

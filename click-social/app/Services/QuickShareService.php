@@ -92,7 +92,7 @@ class QuickShareService
 				continue;
 			}
 
-			$accountTemplate = $account['templates']['content'];
+			$accountTemplate = $account['templates']['template'];
 
 			// Only process shortcodes if post is not in draft mode
 			// because the post title will default to `Auto Draft`.
@@ -100,7 +100,7 @@ class QuickShareService
 				$accountTemplate = TemplateShortcodesService::getInstance()->doShortcodes($accountTemplate);
 			}
 
-			$account['templates']['content'] = $accountTemplate;
+			$account['templates']['template'] = $accountTemplate;
 
 			$filteredTemplates['accounts'][] = $account;
 		}
@@ -177,7 +177,7 @@ class QuickShareService
 						$social_account['templates'],
 						[
 						'scheduled_at' => $quickShareType,
-						'content' => $social_account['templates']['content'],
+						'content' => $social_account['templates']['template'],
 						'status' => PostStatus::SCHEDULED
 						]
 					);
@@ -191,7 +191,7 @@ class QuickShareService
 						$social_account['templates'],
 						[
 							'scheduled_at' => '',
-							'content' => $social_account['templates']['content'],
+							'content' => $social_account['templates']['template'],
 							'status' => PostStatus::DRAFT
 						]
 					);
@@ -220,7 +220,7 @@ class QuickShareService
 
 		foreach ($accounts as $account) {
 			if (
-				empty($account['templates']['content']) ||
+				empty($account['templates']['template']) ||
 				empty($account['uuid']) ||
 				empty($action)
 			) {
@@ -240,7 +240,7 @@ class QuickShareService
 
 			$formattedData[] = [
 				'templates' => [
-					'content' => $account['templates']['content'],
+					'template' => $account['templates']['template'],
 					'status' => $action,
 					'social_account_uuid' => $account['uuid'],
 					'media' => $media
@@ -282,7 +282,7 @@ class QuickShareService
 	 * the data and filtering media files that exist.
 	 *
 	 * @param array $postTemplates The input templates containing action details and accounts data.
-	 *     Each account should include a 'uuid' and 'templates' array with 'content' and optionally 'media'.
+	 *     Each account should include a 'uuid' and 'templates' array with 'template' and optionally 'media'.
 	 *
 	 * @return array The processed templates prepared for storage, including filtered media files for each account.
 	 */
@@ -296,9 +296,7 @@ class QuickShareService
 		foreach ($postTemplates['accounts'] as $account) {
 			$storageTemplate = [
 				'uuid' => $account['uuid'],
-				'templates' => [
-					'content' => $account['templates']['content']
-				]
+				'templates' => $account['templates'],
 			];
 
 			// Store media data if it exists.
@@ -320,9 +318,9 @@ class QuickShareService
 	 * with content and media from the stored templates where applicable.
 	 *
 	 * @param array $storedTemplates The templates previously stored, containing account data
-	 *     with 'uuid', 'templates' (including 'content' and optionally 'media' as files).
+	 *     with 'uuid', 'templates' (including 'template' and optionally 'media' as files).
 	 * @param array $currentTemplates The templates currently being processed, containing account data
-	 *     with 'uuid', 'templates' (including 'content' and optionally 'media').
+	 *     with 'uuid', 'templates' (including 'template' and optionally 'media').
 	 *
 	 * @return array The updated current templates with merged content and valid media from the stored templates.
 	 */
@@ -340,8 +338,8 @@ class QuickShareService
 				$storedTemplate = $storedTemplatesMap[$account['uuid']];
 
 				// Merge stored template content while keeping other current account data
-				$currentTemplates['accounts'][$key]['templates']['content'] =
-					$storedTemplate['templates']['content'];
+				$currentTemplates['accounts'][$key]['templates']['template'] =
+					$storedTemplate['templates']['template'];
 
 				// Merge media if it exists and files still exist
 				if (!empty($storedTemplate['templates']['media'])) {

@@ -17,6 +17,7 @@ final class Core
 
 	private function load()
 	{
+		MigrationManager::getInstance()->run();
 		BootManager::getInstance()->run();
 	}
 }

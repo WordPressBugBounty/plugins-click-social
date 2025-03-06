@@ -162,3 +162,17 @@ AdminRoute::post(
 	'/Workspace/Members/RoleChange'
 )
 ->middleware(['permission:admin']);
+
+AdminRoute::get(
+	'Settings',
+	[SettingsController::class, 'workspaceAdvanced'],
+	'/Workspace/Advanced'
+)
+->middleware(['permission:admin']);
+
+AdminRoute::post(
+	'Settings',
+	[SettingsController::class, 'workspaceAdvanced'],
+	'/Workspace/Advanced'
+)
+->middleware(['permission:admin']);
