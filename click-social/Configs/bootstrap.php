@@ -374,3 +374,21 @@ if (! function_exists('sbcs_get_environment_links')) {
 	}
 
 }
+
+/**
+ * Load plugin text domain for translations.
+ *
+ * @since 1.0.0
+ */
+if (!function_exists('sbcsLoadPluginTextdomain')) {
+	function sbcsLoadPluginTextdomain()
+	{
+		load_plugin_textdomain(
+			'click-social',
+			false,
+			dirname(plugin_basename(SBCS_FILE)) . '/languages'
+		);
+	}
+
+	add_action('init', 'sbcsLoadPluginTextdomain');
+}

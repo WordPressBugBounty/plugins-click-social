@@ -176,3 +176,7 @@ AdminRoute::post(
 	'/Workspace/Advanced'
 )
 ->middleware(['permission:admin']);
+
+if (sbcs_get_config('features.ai_prompt') === true) {
+	require_once SBCS_DIR_PATH . '/routes/admin/ai-prompt.php';
+}

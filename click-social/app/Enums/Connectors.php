@@ -11,6 +11,7 @@ class Connectors
 	public const TWITTER = 'twitter';
 	public const FACEBOOK = 'facebook';
 	public const INSTAGRAM = 'instagram';
+	public const LINKEDIN = 'linkedin';
 
 	public static function list($queryParams, $labelPrefix = '')
 	{
@@ -22,15 +23,23 @@ class Connectors
 		return [
 			[
 				'label'	=> $labelPrefix . 'Twitter',
+				'icon'	=> static::TWITTER,
 				'href'	=> $connector_base_url . 'v1/connect/twitter?' . $queryParams,
 			],
 			[
 				'label'	=> $labelPrefix . 'Facebook',
+				'icon'	=> static::FACEBOOK,
 				'href'	=> $connector_base_url . 'v1/connect/facebook?' . $queryParams,
 			],
 			[
 				'label'	=> $labelPrefix . 'Instagram',
+				'icon'	=> static::INSTAGRAM,
 				'href'	=> $connector_base_url . 'v1/connect/instagram?' . $queryParams,
+			],
+			[
+				'label'	=> $labelPrefix . 'LinkedIn',
+				'icon'	=> static::LINKEDIN,
+				'href'	=> $connector_base_url . 'v1/connect/linkedin?' . $queryParams,
 			]
 		];
 	}

@@ -4,13 +4,13 @@ Author: smashballoon
 Author URI: https://smashballoon.com
 Tags: social media, scheduler, x, facebook, click social
 Requires at least: 6.0
-Tested up to: 6.7.2
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable Tag: 1.1.0
+Stable Tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Schedule social media posts for Twitter/X, Instagram, and Facebook directly from your WordPress dashboard with ClickSocial.
+Schedule social media posts for Twitter/X, Instagram, Facebook and LinkedIn directly from your WordPress dashboard with ClickSocial.
 
 == Description ==
 
@@ -22,15 +22,15 @@ Schedule posts for weeks in advance. Click Social’s social media scheduler off
 
 Manage multiple social media accounts at a single time. With our powerful collaboration tools, you can manage multiple clients and agents simultaneously. Control what users can see and do with each social media account. Allow collaborators to draft posts with clients and admins having the ability to approve or request changes. Make comments regarding specific posts and track what posts need feedback in a handy dashboard.
 
-Easily connect social media accounts yourself or allow clients to connect them for you by authorizing the Smash Balloon Click Social app on Facebook, Instagram, or X (Twitter). Configure social media post scheduling separately for each account. You can completely customize your social media posting strategy for each social media channel you connect.
+Easily connect social media accounts yourself or allow clients to connect them for you by authorizing the Smash Balloon Click Social app on Facebook, Instagram, LinkedIn or X (Twitter). Configure social media post scheduling separately for each account. You can completely customize your social media posting strategy for each social media channel you connect.
 
 Get the most out of your blog posts with our blog post promotion feature we call revival campaigns. With revival campaigns you can promote past evergreen content from your website with our automatic posting feature. After some basic configuration to let the app know what posts you want to add to your revival queue. You can filter by author, category, and publishing dates to pinpoint how to automatically promote blog posts on your WordPress site.
 
-Every time you make a new blog post, promote blog posts instantly with our quick share feature. Immediately after publishing, use the block editor to send out a related X post, Instagram post, or Facebook post to your social media audience. Easily include the blog post link and preview what it will look like once published.
+Every time you make a new blog post, promote blog posts instantly with our quick share feature. Immediately after publishing, use the block editor to send out a related X post, Instagram post, LinkedIn post or Facebook post to your social media audience. Easily include the blog post link and preview what it will look like once published.
 
 = Key Features =
 
-*  **Supports Major Platforms:** Connect, manage and schedule posts for Twitter/X, Instagram, and Facebook (with more platforms coming soon!).
+*  **Supports Major Platforms:** Connect, manage and schedule posts for Twitter/X, Instagram, Facebook and LinkedIn (with more platforms coming soon!).
 *  **Intuitive Editor:** Craft engaging social media posts with a simple, user-friendly editor. Preview and publish across all connected platforms at once.
 *  **Custom Time Slots:** Define your ideal posting times for maximum reach.
 *  **Revive Old Posts:** Automatically reshare your past WordPress content to keep it visible and re-engage your audience. Perfect for seasonal promotions and evergreen content.
@@ -85,14 +85,14 @@ Our dedicated support team is just a quick message away, ready to provide top-no
 
 1. **Install & Activate:** Install and activate the plugin through your WordPress dashboard.
 2. **Connect to ClickSocial:** Connect to the ClickSocial scheduling and posting app.
-3. **Connect Your Social Accounts:** Connect your X, Instagram, and Facebook accounts inside the app.
+3. **Connect Your Social Accounts:** Connect your X, Instagram, Facebook and LinkedIn accounts inside the app.
 4. **Start Scheduling!** Create and schedule posts, set up automated sharing, and watch your social engagement grow!
 
 = Frequently Asked Questions =
 
 **Q: Which social networks are currently supported?**
 
-A: ClickSocial supports Twitter/X, Instagram, and Facebook. We're actively working on adding more social media platforms, so stay tuned!
+A: ClickSocial supports Twitter/X, Instagram, Facebook and LinkedIn. We're actively working on adding more social media platforms, so stay tuned!
 
 **Q: Can I manage multiple accounts for each platform?**
 
@@ -123,6 +123,11 @@ A: Absolutely. ClickSocial allows you to customize the scheduling for each socia
 A: We officially refer to ourselves as ClickSocial though we also refer to it as Click Social in our terms of service and other areas.
 
 == Changelog ==
+
+= 1.2.0 =
+* New: added support for connecting to LinkedIn and posting to user feeds
+* New: added translations support
+* New: introduced Right-to-left (RTL) language support
 
 = 1.1.0 =
 * New: a new shortcode '[post_link]' is now available for Revival Campaign and QuickShare templates, allowing to use full post URLs
@@ -183,7 +188,7 @@ A: We officially refer to ourselves as ClickSocial though we also refer to it as
 
 =**Data Collection**=
 
-ClickSocial does not collect any personal data from your social media accounts (X, Instagram, Facebook) for a purpose other than carrying out the social media posting. All data is stored in an industry standard secure system in accordance with Meta’s data protection requirements.
+ClickSocial does not collect any personal data from your social media accounts (X, Instagram, Facebook, LinkedIn) for a purpose other than carrying out the social media posting. All data is stored in an industry standard secure system in accordance with Meta’s data protection requirements.
 
 =**External Connections**=
 

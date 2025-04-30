@@ -1,0 +1,1897 @@
+# Copyright (C) 2025 Smash Balloon
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ClickSocial WP 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/click-social-wp\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-03-09T19:46:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: click-social\n"
+
+#. Plugin Name of the plugin
+msgid "ClickSocial WP"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://clicksocial.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "Effortlessly manage your social media presence directly within WordPress. This plugin allows you to connect with the ClickSocial application available on clicksocial.com. After creating and connecting an account on clicksocial.com, you can create social media posts and schedule them right from the WordPress dashboard."
+msgstr ""
+
+#. Author of the plugin
+msgid "Smash Balloon"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://smashballoon.com"
+msgstr ""
+
+#: public/build/js/app.js:7456
+#: public/build/js/app.js:7488
+msgid "(deleted)"
+msgstr ""
+
+#: public/build/js/app.js:7557
+msgid "Account"
+msgstr ""
+
+#: public/build/js/app.js:7654
+#: public/build/js/app.js:28151
+msgid "Connected on"
+msgstr ""
+
+#: public/build/js/app.js:7691
+#: public/build/js/app.js:10218
+#: public/build/js/app.js:10442
+#: public/build/js/app.js:11375
+#: public/build/js/app.js:17212
+#: public/build/js/app.js:18337
+#: public/build/js/app.js:18829
+#: public/build/js/app.js:19416
+#: public/build/js/app.js:24062
+#: public/build/js/app.js:24180
+#: public/build/js/app.js:27281
+#: public/build/js/app.js:27554
+#: public/build/js/sidebar-plugin.js:2234
+msgid "Please confirm delete action"
+msgstr ""
+
+#: public/build/js/app.js:7692
+msgid "Are you sure you want to delete this account?"
+msgstr ""
+
+#: public/build/js/app.js:7693
+#: public/build/js/app.js:9503
+#: public/build/js/app.js:9806
+#: public/build/js/app.js:10220
+#: public/build/js/app.js:10400
+#: public/build/js/app.js:10444
+#: public/build/js/app.js:10810
+#: public/build/js/app.js:11377
+#: public/build/js/app.js:11742
+#: public/build/js/app.js:17214
+#: public/build/js/app.js:18339
+#: public/build/js/app.js:18731
+#: public/build/js/app.js:18780
+#: public/build/js/app.js:18831
+#: public/build/js/app.js:19418
+#: public/build/js/app.js:19554
+#: public/build/js/app.js:19883
+#: public/build/js/app.js:20742
+#: public/build/js/app.js:24064
+#: public/build/js/app.js:24182
+#: public/build/js/app.js:24321
+#: public/build/js/app.js:24687
+#: public/build/js/app.js:27028
+#: public/build/js/app.js:27283
+#: public/build/js/app.js:27556
+#: public/build/js/app.js:27591
+#: public/build/js/sidebar-plugin.js:2236
+#: public/build/js/sidebar-plugin.js:2372
+msgid "Cancel"
+msgstr ""
+
+#: public/build/js/app.js:7694
+#: public/build/js/app.js:8774
+#: public/build/js/app.js:10445
+#: public/build/js/app.js:11378
+#: public/build/js/app.js:14240
+#: public/build/js/app.js:17215
+#: public/build/js/app.js:17316
+#: public/build/js/app.js:18340
+#: public/build/js/app.js:18832
+#: public/build/js/app.js:19707
+#: public/build/js/app.js:24065
+#: public/build/js/app.js:24885
+#: public/build/js/app.js:25380
+#: public/build/js/app.js:27188
+#: public/build/js/app.js:27284
+#: public/build/js/app.js:27557
+msgid "Delete"
+msgstr ""
+
+#: public/build/js/app.js:7700
+msgid "There are no accounts connected."
+msgstr ""
+
+#: public/build/js/app.js:7729
+msgid "Delete account"
+msgstr ""
+
+#: public/build/js/app.js:7810
+#: public/build/js/app.js:22316
+#: public/build/js/app.js:22797
+#: public/build/js/app.js:26794
+msgid "Connected Accounts"
+msgstr ""
+
+#: public/build/js/app.js:8540
+#: public/build/js/sidebar-plugin.js:2435
+msgid "Start writing your post..."
+msgstr ""
+
+#: public/build/js/app.js:8598
+msgid "Editor"
+msgstr ""
+
+#: public/build/js/app.js:8607
+#: public/build/js/app.js:8608
+msgid "Preview"
+msgstr ""
+
+#: public/build/js/app.js:8681
+msgid "Publish"
+msgstr ""
+
+#: public/build/js/app.js:8691
+msgid "Schedule Date"
+msgstr ""
+
+#: public/build/js/app.js:8702
+msgid "Schedule Time"
+msgstr ""
+
+#: public/build/js/app.js:8723
+#: public/build/js/app.js:8724
+#: public/build/js/app.js:10401
+#: public/build/js/app.js:18732
+#: public/build/js/app.js:18968
+msgid "Approve"
+msgstr ""
+
+#: public/build/js/app.js:8740
+#: public/build/js/app.js:8741
+msgid "Request Changes"
+msgstr ""
+
+#: public/build/js/app.js:8844
+msgid "Post failed to publish"
+msgstr ""
+
+#: public/build/js/app.js:8917
+#: public/build/js/app.js:9618
+msgid "Clock"
+msgstr ""
+
+#: public/build/js/app.js:8918
+msgid "Set custom time"
+msgstr ""
+
+#: public/build/js/app.js:8964
+msgid "Schedule for predefined slots"
+msgstr ""
+
+#: public/build/js/app.js:9014
+#: public/build/js/app.js:10228
+#: public/build/js/app.js:10232
+msgid "Schedule"
+msgstr ""
+
+#: public/build/js/app.js:9024
+msgid "Save as draft"
+msgstr ""
+
+#: public/build/js/app.js:9066
+msgid "Post Media"
+msgstr ""
+
+#: public/build/js/app.js:9172
+msgid "Edit Media"
+msgstr ""
+
+#: public/build/js/app.js:9182
+msgid "Delete Media"
+msgstr ""
+
+#: public/build/js/app.js:9243
+msgid "Add Image"
+msgstr ""
+
+#: public/build/js/app.js:9253
+msgid "Add WordPress Post"
+msgstr ""
+
+#: public/build/js/app.js:9263
+msgid "Add Video"
+msgstr ""
+
+#: public/build/js/app.js:9323
+msgid "Submit for Approval"
+msgstr ""
+
+#: public/build/js/app.js:9446
+msgid "Schedule for a new time slot"
+msgstr ""
+
+#: public/build/js/app.js:9454
+#: public/build/js/app.js:10226
+msgid "Now"
+msgstr ""
+
+#: public/build/js/app.js:9509
+msgid "Add time to Schedule"
+msgstr ""
+
+#: public/build/js/app.js:9586
+msgid "Slots for"
+msgstr ""
+
+#: public/build/js/app.js:9609
+msgid "No slots available for this day!"
+msgstr ""
+
+#: public/build/js/app.js:9619
+msgid "Schedule for custom time"
+msgstr ""
+
+#: public/build/js/app.js:9668
+msgid "Video Thumbnail"
+msgstr ""
+
+#: public/build/js/app.js:9680
+#: public/build/js/sidebar-plugin.js:2465
+msgid "Your browser does not support the video tag."
+msgstr ""
+
+#: public/build/js/app.js:9778
+#: public/build/js/sidebar-plugin.js:2342
+msgid "Select a WordPress post to use"
+msgstr ""
+
+#: public/build/js/app.js:9780
+#: public/build/js/sidebar-plugin.js:2344
+msgid "Select a post to add the link URL to your content"
+msgstr ""
+
+#: public/build/js/app.js:9790
+#: public/build/js/app.js:11014
+#: public/build/js/app.js:11841
+#: public/build/js/app.js:14134
+#: public/build/js/app.js:14893
+#: public/build/js/app.js:19511
+#: public/build/js/app.js:19554
+#: public/build/js/app.js:19879
+#: public/build/js/app.js:20609
+#: public/build/js/app.js:24317
+#: public/build/js/app.js:24867
+#: public/build/js/app.js:27991
+#: public/build/js/sidebar-plugin.js:2355
+#: public/build/js/sidebar-plugin.js:2713
+msgid "Close"
+msgstr ""
+
+#: public/build/js/app.js:9811
+msgid "Add to Schedule"
+msgstr ""
+
+#: public/build/js/app.js:10219
+#: public/build/js/sidebar-plugin.js:2235
+msgid "Are you sure you want to remove this image?"
+msgstr ""
+
+#: public/build/js/app.js:10221
+#: public/build/js/app.js:19419
+#: public/build/js/app.js:24183
+#: public/build/js/sidebar-plugin.js:2237
+msgid "Remove"
+msgstr ""
+
+#: public/build/js/app.js:10237
+msgid "Update Draft"
+msgstr ""
+
+#: public/build/js/app.js:10240
+#: public/build/js/app.js:17305
+msgid "Update Post"
+msgstr ""
+
+#: public/build/js/app.js:10271
+msgid "Cannot schedule in the past. Please select slots in future."
+msgstr ""
+
+#: public/build/js/app.js:10299
+#: public/build/js/app.js:19305
+msgid "Schedule was not updated!"
+msgstr ""
+
+#: public/build/js/app.js:10312
+msgid "Please select predefined slot or choose a custom time for your schedule!"
+msgstr ""
+
+#: public/build/js/app.js:10318
+msgid "Please select slots in future. Your current selection is in the past!"
+msgstr ""
+
+#: public/build/js/app.js:10339
+msgid "This post must have at least one image or video! "
+msgstr ""
+
+#: public/build/js/app.js:10376
+#: public/build/js/app.js:18707
+msgid "Post approved successfully"
+msgstr ""
+
+#: public/build/js/app.js:10398
+#: public/build/js/app.js:18729
+msgid "Please confirm approval action"
+msgstr ""
+
+#: public/build/js/app.js:10399
+#: public/build/js/app.js:18730
+msgid "Are you sure you want to approve this schedule?"
+msgstr ""
+
+#: public/build/js/app.js:10417
+#: public/build/js/app.js:11353
+#: public/build/js/app.js:17182
+#: public/build/js/app.js:18315
+#: public/build/js/app.js:18802
+msgid "The selected post has been deleted."
+msgstr ""
+
+#: public/build/js/app.js:10423
+#: public/build/js/app.js:11359
+#: public/build/js/app.js:17191
+#: public/build/js/app.js:18321
+#: public/build/js/app.js:18759
+#: public/build/js/app.js:18808
+msgid "Something went wrong. Please try again later."
+msgstr ""
+
+#: public/build/js/app.js:10443
+#: public/build/js/app.js:11376
+#: public/build/js/app.js:17213
+#: public/build/js/app.js:18338
+#: public/build/js/app.js:18830
+msgid "Are you sure you want to delete this schedule?"
+msgstr ""
+
+#: public/build/js/app.js:10690
+#: public/build/js/app.js:15190
+#: public/build/js/app.js:29422
+#: public/build/js/sidebar-plugin.js:1835
+msgid "Exit without saving"
+msgstr ""
+
+#: public/build/js/app.js:10775
+msgid "Please enter the API key."
+msgstr ""
+
+#: public/build/js/app.js:10808
+msgid "Please confirm this action"
+msgstr ""
+
+#: public/build/js/app.js:10809
+msgid "Are you sure you want to disconnect your account?"
+msgstr ""
+
+#: public/build/js/app.js:10811
+msgid "Disconnect"
+msgstr ""
+
+#: public/build/js/app.js:10821
+msgid "This API key should be available in your ClickSocial account."
+msgstr ""
+
+#: public/build/js/app.js:10823
+msgid "Don’t have an API key?"
+msgstr ""
+
+#: public/build/js/app.js:10827
+msgid "Get API Key"
+msgstr ""
+
+#: public/build/js/app.js:10839
+msgid "Enter API key"
+msgstr ""
+
+#: public/build/js/app.js:10845
+#: public/build/js/app.js:22795
+msgid "Connect"
+msgstr ""
+
+#: public/build/js/app.js:10852
+msgid "This WordPress site is currently connected to a ClickSocial account."
+msgstr ""
+
+#: public/build/js/app.js:10857
+msgid "Disconnect account"
+msgstr ""
+
+#: public/build/js/app.js:10989
+msgid "Loading!"
+msgstr ""
+
+#: public/build/js/app.js:10992
+msgid "Redirecting to"
+msgstr ""
+
+#: public/build/js/app.js:10995
+msgid "You are being redirected to connect your account. This should take a few seconds"
+msgstr ""
+
+#: public/build/js/app.js:11004
+msgid "Add Source"
+msgstr ""
+
+#: public/build/js/app.js:11007
+msgid "After you select a platform, you will be redirect to their website to connect your account"
+msgstr ""
+
+#: public/build/js/app.js:11138
+msgid "Needs Attention"
+msgstr ""
+
+#: public/build/js/app.js:11226
+#: public/build/js/app.js:15889
+#: public/build/js/app.js:18157
+msgid "Comment"
+msgstr ""
+
+#: public/build/js/app.js:11226
+#: public/build/js/app.js:15741
+#: public/build/js/app.js:18157
+msgid "Comments"
+msgstr ""
+
+#: public/build/js/app.js:11231
+#: public/build/js/app.js:18146
+msgid "Rejected"
+msgstr ""
+
+#: public/build/js/app.js:11243
+#: public/build/js/app.js:11254
+#: public/build/js/app.js:18169
+#: public/build/js/app.js:18181
+msgid "Schedule View"
+msgstr ""
+
+#: public/build/js/app.js:11717
+msgid "Submit"
+msgstr ""
+
+#: public/build/js/app.js:11747
+#: public/build/js/app.js:11749
+#: public/build/js/app.js:22128
+#: public/build/js/app.js:24693
+#: public/build/js/app.js:24695
+#: public/build/js/app.js:24702
+#: public/build/js/app.js:24704
+#: public/build/js/app.js:25972
+msgid "Next"
+msgstr ""
+
+#: public/build/js/app.js:11808
+#: public/build/js/app.js:24857
+msgid "Set up Revival Campaign"
+msgstr ""
+
+#: public/build/js/app.js:12042
+#: public/build/js/app.js:18272
+#: public/build/js/app.js:23341
+#: public/build/js/app.js:25223
+msgid "Network"
+msgstr ""
+
+#: public/build/js/app.js:12204
+msgid "User Avatar"
+msgstr ""
+
+#: public/build/js/app.js:12243
+msgid "Network Icon"
+msgstr ""
+
+#: public/build/js/app.js:12256
+#: public/build/js/app.js:23786
+msgid "Start writing your post"
+msgstr ""
+
+#: public/build/js/app.js:12401
+#: public/build/js/app.js:20705
+#: public/build/js/app.js:23818
+msgid "Post Title"
+msgstr ""
+
+#: public/build/js/app.js:12404
+#: public/build/js/app.js:20710
+#: public/build/js/app.js:23824
+msgid "Excerpt"
+msgstr ""
+
+#: public/build/js/app.js:12407
+#: public/build/js/app.js:20715
+#: public/build/js/app.js:23830
+msgid "Short Post Link"
+msgstr ""
+
+#: public/build/js/app.js:12410
+#: public/build/js/app.js:20720
+#: public/build/js/app.js:23836
+msgid "Post Link"
+msgstr ""
+
+#: public/build/js/app.js:12413
+#: public/build/js/app.js:20725
+#: public/build/js/app.js:23842
+msgid "Categories as Hashtags"
+msgstr ""
+
+#: public/build/js/app.js:12500
+#: public/build/js/app.js:20688
+msgid "Dynamic Variables"
+msgstr ""
+
+#: public/build/js/app.js:12505
+#: public/build/js/app.js:17559
+#: public/build/js/app.js:20646
+#: public/build/js/app.js:23727
+#: public/build/js/app.js:23805
+#: public/build/js/app.js:24966
+#: public/build/js/app.js:25141
+#: public/build/js/app.js:26529
+msgid "Info"
+msgstr ""
+
+#: public/build/js/app.js:12509
+msgid "Tooltip Description Here!!!"
+msgstr ""
+
+#: public/build/js/app.js:12783
+#: public/build/js/app.js:25116
+msgid "By authors"
+msgstr ""
+
+#: public/build/js/app.js:12786
+msgid "Exclude author"
+msgstr ""
+
+#: public/build/js/app.js:12899
+#: public/build/js/app.js:25103
+msgid "Authors"
+msgstr ""
+
+#: public/build/js/app.js:12909
+#: public/build/js/app.js:25134
+msgid "Add authors"
+msgstr ""
+
+#: public/build/js/app.js:13096
+msgid "Published Between"
+msgstr ""
+
+#: public/build/js/app.js:13099
+#: public/build/js/app.js:24999
+msgid "Exclude Published Between"
+msgstr ""
+
+#: public/build/js/app.js:13340
+#: public/build/js/app.js:24982
+msgid "Date"
+msgstr ""
+
+#: public/build/js/app.js:13355
+#: public/build/js/app.js:25007
+msgid "Start Date"
+msgstr ""
+
+#: public/build/js/app.js:13368
+#: public/build/js/app.js:25035
+msgid "End Date"
+msgstr ""
+
+#: public/build/js/app.js:13455
+msgid "Tags Include"
+msgstr ""
+
+#: public/build/js/app.js:13458
+msgid "Tags Exclude"
+msgstr ""
+
+#: public/build/js/app.js:13571
+#: public/build/js/app.js:25064
+msgid "Tags"
+msgstr ""
+
+#: public/build/js/app.js:13581
+#: public/build/js/app.js:25086
+msgid "Add tags here"
+msgstr ""
+
+#: public/build/js/app.js:13635
+msgid "Loading..."
+msgstr ""
+
+#: public/build/js/app.js:13641
+msgid "You have %s selected post"
+msgid_plural "You have %s selected posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: public/build/js/app.js:13656
+msgid "Back to Filter"
+msgstr ""
+
+#: public/build/js/app.js:13657
+#: public/build/js/app.js:24975
+msgid "Show"
+msgstr ""
+
+#: public/build/js/app.js:13759
+msgid "WordPress Posts List"
+msgstr ""
+
+#: public/build/js/app.js:13764
+msgid "No posts found"
+msgstr ""
+
+#: public/build/js/app.js:13935
+msgid "Add new time slot"
+msgstr ""
+
+#: public/build/js/app.js:13938
+#: public/build/js/app.js:24207
+msgid "Add"
+msgstr ""
+
+#: public/build/js/app.js:14128
+#: public/build/js/app.js:19860
+#: public/build/js/app.js:24295
+#: public/build/js/app.js:24298
+msgid "Done"
+msgstr ""
+
+#: public/build/js/app.js:14237
+msgid "Delete time slot"
+msgstr ""
+
+#: public/build/js/app.js:14450
+msgid "Select time slot"
+msgstr ""
+
+#: public/build/js/app.js:14452
+#: public/build/js/app.js:19690
+msgid "Add time"
+msgstr ""
+
+#: public/build/js/app.js:14839
+#: public/build/js/app.js:14842
+msgid "ClickSocial"
+msgstr ""
+
+#: public/build/js/app.js:14881
+msgid "Information"
+msgstr ""
+
+#: public/build/js/app.js:15000
+msgid "Something went wrong!"
+msgstr ""
+
+#: public/build/js/app.js:15003
+msgid "Please reload the page and, if the problem persists, report it to the support team."
+msgstr ""
+
+#: public/build/js/app.js:15003
+#: public/build/js/app.js:25714
+msgid "Our support team would be happy to help."
+msgstr ""
+
+#: public/build/js/app.js:15008
+#: public/build/js/app.js:25719
+msgid "Contact Support"
+msgstr ""
+
+#: public/build/js/app.js:15070
+msgid "Warning"
+msgstr ""
+
+#: public/build/js/app.js:15106
+msgid "Click on any of the dynamic variables below to add them to your template. These will automatically be replaced with the corresponding content from your WordPress posts when generating social media posts."
+msgstr ""
+
+#: public/build/js/app.js:15107
+msgid "This template helps you create social media posts automatically from your WordPress posts. It uses placeholders for key elements like the post title, excerpt, short link, and categories, which are dynamically replaced with the relevant information from your WordPress content."
+msgstr ""
+
+#: public/build/js/app.js:15536
+#: public/build/js/app.js:15632
+#: public/build/js/app.js:15635
+msgid "Load More"
+msgstr ""
+
+#: public/build/js/app.js:15737
+#: public/build/js/app.js:15823
+msgid "No comments yet"
+msgstr ""
+
+#: public/build/js/app.js:15739
+msgid "1 Comment"
+msgstr ""
+
+#: public/build/js/app.js:15826
+msgid "Drop the first comment."
+msgstr ""
+
+#: public/build/js/app.js:15879
+msgid "Add changes you would like to request"
+msgstr ""
+
+#: public/build/js/app.js:15942
+#: public/build/js/app.js:16031
+#: public/build/js/app.js:16114
+#: public/build/js/app.js:16214
+msgid "Social Account Image"
+msgstr ""
+
+#: public/build/js/app.js:15959
+#: public/build/js/app.js:16134
+msgid "Earth Icon"
+msgstr ""
+
+#: public/build/js/app.js:16139
+#: public/build/js/app.js:16227
+msgid "More Icon"
+msgstr ""
+
+#: public/build/js/app.js:16375
+#: public/build/js/app.js:16400
+msgid "List view"
+msgstr ""
+
+#: public/build/js/app.js:16384
+#: public/build/js/app.js:16414
+msgid "Calendar view"
+msgstr ""
+
+#: public/build/js/app.js:16401
+#: public/build/js/app.js:16435
+msgid "Edit Schedule"
+msgstr ""
+
+#: public/build/js/app.js:16415
+#: public/build/js/app.js:16453
+#: public/build/js/app.js:22784
+#: public/build/js/app.js:23416
+#: public/build/js/app.js:23417
+#: public/build/js/app.js:23573
+msgid "Add New"
+msgstr ""
+
+#: public/build/js/app.js:16590
+msgid "Scheduled"
+msgstr ""
+
+#: public/build/js/app.js:16597
+msgid "Published"
+msgstr ""
+
+#: public/build/js/app.js:16604
+msgid "Awaiting Approval"
+msgstr ""
+
+#: public/build/js/app.js:16611
+#: public/build/js/app.js:21765
+#: public/build/js/app.js:24877
+msgid "Settings"
+msgstr ""
+
+#: public/build/js/app.js:16618
+msgid "Drafts"
+msgstr ""
+
+#: public/build/js/app.js:16629
+msgid "Hide QuickView"
+msgstr ""
+
+#: public/build/js/app.js:16772
+msgid "Posts Needs Attention"
+msgstr ""
+
+#: public/build/js/app.js:16772
+msgid "Post Need Attention"
+msgstr ""
+
+#: public/build/js/app.js:16775
+msgid "These posts failed to publish and need review"
+msgstr ""
+
+#: public/build/js/app.js:16775
+msgid "This post failed to publish and need review"
+msgstr ""
+
+#: public/build/js/app.js:16779
+msgid "Hide Failed Posts"
+msgstr ""
+
+#: public/build/js/app.js:16779
+msgid "Show Failed Posts"
+msgstr ""
+
+#: public/build/js/app.js:16782
+msgid "Expand"
+msgstr ""
+
+#: public/build/js/app.js:16799
+#: public/build/js/app.js:16826
+#: public/build/js/app.js:16855
+msgid "Please select a connected account first to add a new post."
+msgstr ""
+
+#: public/build/js/app.js:16806
+msgid "No scheduled posts yet"
+msgstr ""
+
+#: public/build/js/app.js:16807
+msgid "When a post is scheduled, it will be displayed here."
+msgstr ""
+
+#: public/build/js/app.js:16829
+msgid "Schedule a post"
+msgstr ""
+
+#: public/build/js/app.js:16831
+msgid "You have no published posts for last 7 days"
+msgstr ""
+
+#: public/build/js/app.js:16832
+msgid "When a post is published, it will be displayed here."
+msgstr ""
+
+#: public/build/js/app.js:16836
+msgid "Load Previous Posts"
+msgstr ""
+
+#: public/build/js/app.js:16858
+msgid "New Draft"
+msgstr ""
+
+#: public/build/js/app.js:16861
+msgid "No drafts yet"
+msgstr ""
+
+#: public/build/js/app.js:16862
+msgid "Create drafts to play around with ideas and save partial posts to complete later."
+msgstr ""
+
+#: public/build/js/app.js:16879
+msgid "No posts awaiting approval"
+msgstr ""
+
+#: public/build/js/app.js:16880
+msgid "If a post is created that needs approval, it will appear here."
+msgstr ""
+
+#: public/build/js/app.js:17222
+msgid "Quick View"
+msgstr ""
+
+#: public/build/js/app.js:17398
+#: public/build/js/app.js:25294
+msgid "Add time slots for when you would like to share revival posts"
+msgstr ""
+
+#: public/build/js/app.js:17399
+msgid "Time Slots Management Section"
+msgstr ""
+
+#: public/build/js/app.js:17552
+msgid "Configure Templates"
+msgstr ""
+
+#: public/build/js/app.js:17560
+#: public/build/js/app.js:20647
+#: public/build/js/app.js:23728
+msgid "How does it work?"
+msgstr ""
+
+#: public/build/js/app.js:17639
+#: public/build/js/app.js:24907
+msgid "Filter posts"
+msgstr ""
+
+#: public/build/js/app.js:17639
+#: public/build/js/app.js:24916
+msgid "Select accounts"
+msgstr ""
+
+#: public/build/js/app.js:17639
+msgid "Configure templates"
+msgstr ""
+
+#: public/build/js/app.js:17639
+#: public/build/js/app.js:24934
+msgid "Posting times"
+msgstr ""
+
+#: public/build/js/app.js:17661
+#: public/build/js/app.js:24026
+msgid "Couldn't create the revival campaign. Please try again!"
+msgstr ""
+
+#: public/build/js/app.js:18056
+#: public/build/js/app.js:18057
+msgid "Setup Revival Posts"
+msgstr ""
+
+#: public/build/js/app.js:18064
+msgid "Learn More About Revival Posts"
+msgstr ""
+
+#: public/build/js/app.js:18066
+msgid "Learn More"
+msgstr ""
+
+#: public/build/js/app.js:18753
+msgid "Post has been rejected"
+msgstr ""
+
+#: public/build/js/app.js:18778
+msgid "Please confirm reject action"
+msgstr ""
+
+#: public/build/js/app.js:18779
+msgid "Are you sure you want to reject this schedule?"
+msgstr ""
+
+#: public/build/js/app.js:18781
+#: public/build/js/app.js:18986
+msgid "Reject"
+msgstr ""
+
+#: public/build/js/app.js:18855
+msgid "Hide Preview"
+msgstr ""
+
+#: public/build/js/app.js:18867
+#: public/build/js/app.js:22118
+#: public/build/js/app.js:22817
+#: public/build/js/app.js:25158
+#: public/build/js/app.js:26001
+#: public/build/js/app.js:26139
+#: public/build/js/app.js:27608
+msgid "Back"
+msgstr ""
+
+#: public/build/js/app.js:18946
+msgid "Submitted by"
+msgstr ""
+
+#: public/build/js/app.js:19099
+msgid "Add new slot"
+msgstr ""
+
+#: public/build/js/app.js:19417
+msgid "Please confirm slot time entry removal?"
+msgstr ""
+
+#: public/build/js/app.js:19498
+#: public/build/js/app.js:22833
+msgid "Edit Schedule for"
+msgstr ""
+
+#: public/build/js/app.js:19501
+msgid "Set or edit the default slots to post for this account"
+msgstr ""
+
+#: public/build/js/app.js:19562
+#: public/build/js/app.js:20752
+#: public/build/js/app.js:24894
+#: public/build/js/app.js:26682
+#: public/build/js/app.js:28565
+msgid "Save Changes"
+msgstr ""
+
+#: public/build/js/app.js:19799
+msgid "HH"
+msgstr ""
+
+#: public/build/js/app.js:19816
+msgid "MM"
+msgstr ""
+
+#: public/build/js/app.js:19831
+msgid "AM/PM"
+msgstr ""
+
+#: public/build/js/app.js:20107
+msgid "Revival Campaign"
+msgstr ""
+
+#: public/build/js/app.js:20111
+#: public/build/js/app.js:28980
+msgid "Calendar"
+msgstr ""
+
+#: public/build/js/app.js:20599
+#: public/build/js/sidebar-plugin.js:2702
+msgid "Edit templates"
+msgstr ""
+
+#: public/build/js/app.js:20640
+msgid "Edit Template"
+msgstr ""
+
+#: public/build/js/app.js:20850
+msgid "Workspace"
+msgstr ""
+
+#: public/build/js/app.js:21125
+#: public/build/js/sidebar-plugin.js:3053
+msgid "Clear Search"
+msgstr ""
+
+#: public/build/js/app.js:21148
+#: public/build/js/sidebar-plugin.js:3076
+msgid "No posts found!"
+msgstr ""
+
+#: public/build/js/app.js:21157
+#: public/build/js/sidebar-plugin.js:3084
+msgid "Newer posts"
+msgstr ""
+
+#: public/build/js/app.js:21165
+#: public/build/js/sidebar-plugin.js:3091
+msgid "Older posts"
+msgstr ""
+
+#: public/build/js/app.js:21489
+#: public/build/js/app.js:26422
+msgid "Connection"
+msgstr ""
+
+#: public/build/js/app.js:21499
+#: public/build/js/app.js:26501
+msgid "Profile"
+msgstr ""
+
+#: public/build/js/app.js:21506
+#: public/build/js/app.js:26245
+msgid "Billing"
+msgstr ""
+
+#: public/build/js/app.js:21537
+msgid "All Posts"
+msgstr ""
+
+#: public/build/js/app.js:21546
+msgid "Search"
+msgstr ""
+
+#: public/build/js/app.js:21554
+#: public/build/js/app.js:23428
+msgid "Notifications"
+msgstr ""
+
+#: public/build/js/app.js:21562
+msgid "Revive Posts"
+msgstr ""
+
+#: public/build/js/app.js:21772
+#: public/build/js/app.js:25694
+msgid "Help & Support"
+msgstr ""
+
+#: public/build/js/app.js:21936
+msgid "Welcome to your ClickSocial Dashboard!"
+msgstr ""
+
+#: public/build/js/app.js:21937
+msgid "This would be the one place where you can schedule, edit or delete social media posts."
+msgstr ""
+
+#: public/build/js/app.js:21945
+msgid "Your connected social accounts"
+msgstr ""
+
+#: public/build/js/app.js:21946
+msgid "Select an account to begin scheduling posts."
+msgstr ""
+
+#: public/build/js/app.js:21955
+msgid "Edit the posting schedule"
+msgstr ""
+
+#: public/build/js/app.js:21956
+msgid "Create and edit your weekly time slots for scheduling posts."
+msgstr ""
+
+#: public/build/js/app.js:21963
+msgid "Add a new post to the schedule"
+msgstr ""
+
+#: public/build/js/app.js:21964
+msgid "Create a new post and add it to the posting schedule or post it immediately."
+msgstr ""
+
+#: public/build/js/app.js:21971
+msgid "Select a view type"
+msgstr ""
+
+#: public/build/js/app.js:21972
+msgid "Switch between a list view and a monthly calendar view for easy scheduling."
+msgstr ""
+
+#: public/build/js/app.js:21979
+msgid "Filter scheduled posts by status"
+msgstr ""
+
+#: public/build/js/app.js:21980
+msgid "Use filtering to quickly find and act on posts that need attention."
+msgstr ""
+
+#: public/build/js/app.js:21987
+msgid "Your daily posting schedule"
+msgstr ""
+
+#: public/build/js/app.js:21988
+msgid "We created a schedule for you. Use the “Edit Schedule” button in the top right corner to make changes."
+msgstr ""
+
+#: public/build/js/app.js:21995
+msgid "Click to schedule a post"
+msgstr ""
+
+#: public/build/js/app.js:21996
+msgid "Click on an empty slot to schedule a new post for that time."
+msgstr ""
+
+#: public/build/js/app.js:22122
+#: public/build/js/app.js:24714
+#: public/build/js/app.js:24716
+msgid "Finish"
+msgstr ""
+
+#: public/build/js/app.js:22298
+#: public/build/js/app.js:27961
+msgid "Members"
+msgstr ""
+
+#: public/build/js/app.js:22304
+#: public/build/js/app.js:28557
+msgid "Quick Share"
+msgstr ""
+
+#: public/build/js/app.js:22310
+#: public/build/js/app.js:28877
+msgid "Timezone"
+msgstr ""
+
+#: public/build/js/app.js:22325
+msgid "Advanced"
+msgstr ""
+
+#: public/build/js/app.js:22470
+#: public/build/js/sidebar-plugin.js:2124
+msgid "Select or Upload Media files"
+msgstr ""
+
+#: public/build/js/app.js:22472
+#: public/build/js/sidebar-plugin.js:2126
+msgid "Use this media file"
+msgstr ""
+
+#: public/build/js/app.js:22798
+msgid "Connect your social accounts and start scheduling posts"
+msgstr ""
+
+#: public/build/js/app.js:22825
+msgid "Composer"
+msgstr ""
+
+#: public/build/js/app.js:22833
+msgid "Create a post for"
+msgstr ""
+
+#: public/build/js/app.js:23435
+msgid "Filter"
+msgstr ""
+
+#: public/build/js/app.js:23446
+msgid "All"
+msgstr ""
+
+#: public/build/js/app.js:23465
+msgid "You have no new notifications"
+msgstr ""
+
+#: public/build/js/app.js:23721
+msgid "Configure Template"
+msgstr ""
+
+#: public/build/js/app.js:23762
+msgid "Pic"
+msgstr ""
+
+#: public/build/js/app.js:24043
+msgid "Campaign deleted successfully!"
+msgstr ""
+
+#: public/build/js/app.js:24063
+msgid "Are you sure you want to delete this campaign?"
+msgstr ""
+
+#: public/build/js/app.js:24181
+msgid "Please confirm slot time entry removal"
+msgstr ""
+
+#: public/build/js/app.js:24886
+msgid "Delete campaign"
+msgstr ""
+
+#: public/build/js/app.js:24893
+msgid "Save"
+msgstr ""
+
+#: public/build/js/app.js:24925
+msgid "Configure template"
+msgstr ""
+
+#: public/build/js/app.js:24946
+#: public/build/js/app.js:24952
+msgid "Filters"
+msgstr ""
+
+#: public/build/js/app.js:24955
+msgid "1 out of 2 active automations affect Facebook posts"
+msgstr ""
+
+#: public/build/js/app.js:24968
+msgid "You selected"
+msgstr ""
+
+#: public/build/js/app.js:24968
+msgid "posts"
+msgstr ""
+
+#: public/build/js/app.js:25119
+msgid "Exclude authors"
+msgstr ""
+
+#: public/build/js/app.js:25143
+msgid "posts selected"
+msgstr ""
+
+#: public/build/js/app.js:25159
+msgid "Back to Filters"
+msgstr ""
+
+#: public/build/js/app.js:25176
+#: public/build/js/app.js:25182
+#: public/build/js/app.js:28710
+msgid "Accounts"
+msgstr ""
+
+#: public/build/js/app.js:25185
+msgid "Select connected accounts your revival campaign will post to"
+msgstr ""
+
+#: public/build/js/app.js:25237
+msgid "Templates"
+msgstr ""
+
+#: public/build/js/app.js:25241
+#: public/build/js/app.js:28770
+msgid "You have"
+msgstr ""
+
+#: public/build/js/app.js:25241
+#: public/build/js/app.js:28770
+msgid "active templates"
+msgstr ""
+
+#: public/build/js/app.js:25241
+msgid "active template"
+msgstr ""
+
+#: public/build/js/app.js:25250
+#: public/build/js/app.js:25251
+#: public/build/js/app.js:28779
+msgid "Edit"
+msgstr ""
+
+#: public/build/js/app.js:25278
+msgid "Time"
+msgstr ""
+
+#: public/build/js/app.js:25284
+msgid "Posting Schedule"
+msgstr ""
+
+#: public/build/js/app.js:25287
+msgid "Add time slots for when you would like to automatically post to connected accounts"
+msgstr ""
+
+#: public/build/js/app.js:25368
+msgid "Arrow"
+msgstr ""
+
+#: public/build/js/app.js:25399
+msgid "Success"
+msgstr ""
+
+#: public/build/js/app.js:25404
+msgid "Revival campaign is successfully set up!"
+msgstr ""
+
+#: public/build/js/app.js:25407
+msgid "We have set up and activated your revival campaign."
+msgstr ""
+
+#: public/build/js/app.js:25410
+msgid "You can view and edit it in the Revival campaign tab."
+msgstr ""
+
+#: public/build/js/app.js:25483
+msgid "Revive old WordPress posts by automatically sharing them on social media"
+msgstr ""
+
+#: public/build/js/app.js:25486
+msgid "Revival posts help you choose WordPress posts that you want to automatically share on social media. These could be your very old posts that you want views on, or some of the more popular ones."
+msgstr ""
+
+#: public/build/js/app.js:25494
+msgid "How to set up revival campaigns"
+msgstr ""
+
+#: public/build/js/app.js:25510
+msgid "Select posts from WordPress you want to share"
+msgstr ""
+
+#: public/build/js/app.js:25513
+#: public/build/js/app.js:25836
+msgid "Select one or one hundred posts with our filters"
+msgstr ""
+
+#: public/build/js/app.js:25531
+msgid "Choose accounts you want to automatically share to"
+msgstr ""
+
+#: public/build/js/app.js:25534
+#: public/build/js/app.js:25851
+msgid "Choose which accounts you want to share it on"
+msgstr ""
+
+#: public/build/js/app.js:25552
+msgid "Select posting times and define a template"
+msgstr ""
+
+#: public/build/js/app.js:25555
+#: public/build/js/app.js:25866
+msgid "Choose what time you want to share"
+msgstr ""
+
+#: public/build/js/app.js:25576
+msgid "Your campaign should be set up and you should see revival posts being scheduled on your main calendar."
+msgstr ""
+
+#: public/build/js/app.js:25582
+msgid "Have questions? View our documentation."
+msgstr ""
+
+#: public/build/js/app.js:25697
+msgid "Find help getting setup and using our features with our documentation."
+msgstr ""
+
+#: public/build/js/app.js:25711
+msgid "Get Support"
+msgstr ""
+
+#: public/build/js/app.js:25714
+msgid "Still have questions, or stuck somewhere?"
+msgstr ""
+
+#: public/build/js/app.js:25789
+msgid "Get Started with ClickSocial"
+msgstr ""
+
+#: public/build/js/app.js:25792
+msgid "You are a few steps away from scheduling posts and becoming a social media wizard. To get started, create your ClickSocial Account."
+msgstr ""
+
+#: public/build/js/app.js:25805
+msgid "Get started for free"
+msgstr ""
+
+#: public/build/js/app.js:25807
+msgid "Arrow Icon"
+msgstr ""
+
+#: public/build/js/app.js:25814
+msgid "I already have an account"
+msgstr ""
+
+#: public/build/js/app.js:25823
+msgid "With ClickSocial, you can"
+msgstr ""
+
+#: public/build/js/app.js:25833
+msgid "Get more from your blog posts with Revival Campaigns"
+msgstr ""
+
+#: public/build/js/app.js:25848
+msgid "Engage your audience across multiple platforms"
+msgstr ""
+
+#: public/build/js/app.js:25863
+msgid "Optimize scheduling for maximum effect"
+msgstr ""
+
+#: public/build/js/app.js:25982
+msgid "Finish Setup"
+msgstr ""
+
+#: public/build/js/app.js:26005
+msgid "Getting Started"
+msgstr ""
+
+#: public/build/js/app.js:26012
+msgid "Connect your ClickSocial Account"
+msgstr ""
+
+#: public/build/js/app.js:26013
+msgid "Get started by connecting your ClickSocial account"
+msgstr ""
+
+#: public/build/js/app.js:26023
+msgid "Add your ClickSocial API Key"
+msgstr ""
+
+#: public/build/js/app.js:26035
+msgid "Connect Social Accounts"
+msgstr ""
+
+#: public/build/js/app.js:26036
+msgid "Connect your Social accounts from Facebook, Instagram or Twitter"
+msgstr ""
+
+#: public/build/js/app.js:26048
+#: public/build/js/app.js:26804
+msgid "Add Account"
+msgstr ""
+
+#: public/build/js/app.js:26092
+msgid "Configure Timezone"
+msgstr ""
+
+#: public/build/js/app.js:26093
+msgid "All your posts would be scheduled in this timezone for you and your team members. You can always change this later."
+msgstr ""
+
+#: public/build/js/app.js:26107
+msgid "Use ClickSocial's connected account timezone"
+msgstr ""
+
+#: public/build/js/app.js:26122
+msgid "Use WordPress site timezone."
+msgstr ""
+
+#: public/build/js/app.js:26186
+msgid "This is the settings page."
+msgstr ""
+
+#: public/build/js/app.js:26255
+msgid "Your current plan"
+msgstr ""
+
+#: public/build/js/app.js:26263
+msgid "Upgrade"
+msgstr ""
+
+#: public/build/js/app.js:26286
+msgid "%d/%d Members"
+msgstr ""
+
+#: public/build/js/app.js:26301
+msgid "%d/%d Social Accounts"
+msgstr ""
+
+#: public/build/js/app.js:26316
+msgid "%d/%d Scheduled Posts"
+msgstr ""
+
+#: public/build/js/app.js:26338
+msgid "Edit Payment Details"
+msgstr ""
+
+#: public/build/js/app.js:26341
+msgid "View your plan, payment details and invoices on the web app"
+msgstr ""
+
+#: public/build/js/app.js:26347
+msgid "Manage Billing"
+msgstr ""
+
+#: public/build/js/app.js:26511
+msgid "Profile Image"
+msgstr ""
+
+#: public/build/js/app.js:26535
+msgid "Updating your profile"
+msgstr ""
+
+#: public/build/js/app.js:26538
+msgid "Your profile is connected to your WordPress account."
+msgstr ""
+
+#: public/build/js/app.js:26541
+msgid "To change it, you need to update it from your settings."
+msgstr ""
+
+#: public/build/js/app.js:26547
+#: public/build/js/app.js:26549
+msgid "Go to WordPress settings"
+msgstr ""
+
+#: public/build/js/app.js:26651
+msgid "Settings saved successfully"
+msgstr ""
+
+#: public/build/js/app.js:26656
+msgid "Failed to save settings"
+msgstr ""
+
+#: public/build/js/app.js:26672
+msgid "Advanced Settings"
+msgstr ""
+
+#: public/build/js/app.js:26682
+msgid "Saving..."
+msgstr ""
+
+#: public/build/js/app.js:26695
+msgid "Make Short Links default to Post Links"
+msgstr ""
+
+#: public/build/js/app.js:26698
+msgid "Make [short_link] tag behave as [post_link] in the Revival Campaign and Quick Share templates."
+msgstr ""
+
+#: public/build/js/app.js:26712
+msgid "Enable/disable short links"
+msgstr ""
+
+#: public/build/js/app.js:26857
+msgid "Connect Account"
+msgstr ""
+
+#: public/build/js/app.js:26941
+msgid "Create Account"
+msgstr ""
+
+#: public/build/js/app.js:26950
+msgid "Label"
+msgstr ""
+
+#: public/build/js/app.js:26961
+msgid "Social Network"
+msgstr ""
+
+#: public/build/js/app.js:26981
+msgid "Consumer key"
+msgstr ""
+
+#: public/build/js/app.js:26992
+msgid "Consumer secret"
+msgstr ""
+
+#: public/build/js/app.js:27003
+msgid "}Access Token Key"
+msgstr ""
+
+#: public/build/js/app.js:27015
+msgid "Access Token Secret"
+msgstr ""
+
+#: public/build/js/app.js:27032
+msgid "Add account"
+msgstr ""
+
+#: public/build/js/app.js:27112
+msgid "Administrator"
+msgstr ""
+
+#: public/build/js/app.js:27116
+msgid "This user is an administrator and has full posting access to all social accounts that are added. To provide access on a per account basis, change their access level to standard."
+msgstr ""
+
+#: public/build/js/app.js:27122
+msgid "Switch to Standard"
+msgstr ""
+
+#: public/build/js/app.js:27261
+msgid "Permission removed!"
+msgstr ""
+
+#: public/build/js/app.js:27282
+msgid "Are you sure you want to delete this account access?"
+msgstr ""
+
+#: public/build/js/app.js:27308
+msgid "Social Account Access"
+msgstr ""
+
+#: public/build/js/app.js:27326
+msgid "The user is not assigned to any social account"
+msgstr ""
+
+#: public/build/js/app.js:27555
+msgid "Are you sure you want to delete this member?"
+msgstr ""
+
+#: public/build/js/app.js:27589
+msgid "Provide user admin access?"
+msgstr ""
+
+#: public/build/js/app.js:27589
+msgid "Provide user standard access?"
+msgstr ""
+
+#: public/build/js/app.js:27590
+msgid "This shall provide this user full posting, editing and reviewing access to all social media accounts. You can revoke it by turning their access back to standard."
+msgstr ""
+
+#: public/build/js/app.js:27590
+msgid "This shall allow you to control their user's abilities for each specific social account."
+msgstr ""
+
+#: public/build/js/app.js:27592
+msgid "Make Admin"
+msgstr ""
+
+#: public/build/js/app.js:27592
+msgid "Make Standard"
+msgstr ""
+
+#: public/build/js/app.js:27612
+msgid "Edit Permissions"
+msgstr ""
+
+#: public/build/js/app.js:27638
+msgid "Access Level"
+msgstr ""
+
+#: public/build/js/app.js:27650
+msgid "Admin"
+msgstr ""
+
+#: public/build/js/app.js:27653
+msgid "Standard"
+msgstr ""
+
+#: public/build/js/app.js:27661
+#: public/build/js/app.js:27662
+msgid "Delete Member"
+msgstr ""
+
+#: public/build/js/app.js:27673
+msgid "Add permissions for other social accounts"
+msgstr ""
+
+#: public/build/js/app.js:27681
+msgid "Refresh Accounts"
+msgstr ""
+
+#: public/build/js/app.js:27828
+msgid "No results found!"
+msgstr ""
+
+#: public/build/js/app.js:27835
+msgid "Searching..."
+msgstr ""
+
+#: public/build/js/app.js:27892
+msgid "User added successfully"
+msgstr ""
+
+#: public/build/js/app.js:27946
+msgid "Super Admin"
+msgstr ""
+
+#: public/build/js/app.js:27976
+msgid "Search Members"
+msgstr ""
+
+#: public/build/js/app.js:28026
+msgid "Invite"
+msgstr ""
+
+#: public/build/js/app.js:28066
+msgid "option"
+msgstr ""
+
+#: public/build/js/app.js:28074
+msgid "There are no users to display!"
+msgstr ""
+
+#: public/build/js/app.js:28164
+msgid "Add Permission"
+msgstr ""
+
+#: public/build/js/app.js:28463
+msgid "Please select at least one account!"
+msgstr ""
+
+#: public/build/js/app.js:28467
+msgid "Please select an action on Publish!"
+msgstr ""
+
+#: public/build/js/app.js:28578
+msgid "Share from Gutenberg Editor"
+msgstr ""
+
+#: public/build/js/app.js:28581
+msgid "Enable ClickSocial within Gutenberg editor to allow you to share posts quickly"
+msgstr ""
+
+#: public/build/js/app.js:28610
+msgid "On Publish"
+msgstr ""
+
+#: public/build/js/app.js:28613
+msgid "When you publish a new WordPress post, you want ClickSocial to..."
+msgstr ""
+
+#: public/build/js/app.js:28638
+msgid "Share immediately"
+msgstr ""
+
+#: public/build/js/app.js:28663
+msgid "Schedule it for the next available slot"
+msgstr ""
+
+#: public/build/js/app.js:28688
+msgid "Add it to Drafts"
+msgstr ""
+
+#: public/build/js/app.js:28713
+msgid "These would be the accounts the post would be shared on by default."
+msgstr ""
+
+#: public/build/js/app.js:28783
+msgid "Edit Templates"
+msgstr ""
+
+#: public/build/js/app.js:28863
+msgid "Timezone not set."
+msgstr ""
+
+#: public/build/js/app.js:28883
+msgid "The timezone setting is used to display all times relative to your location and does not change current schedules. It only changes the times displayed to you."
+msgstr ""
+
+#: public/build/js/app.js:28886
+msgid "Choose between the timezone from your ClickSocial account (configured on clicksocial.com) and the timezone selected for this website (WordPress site timezone)"
+msgstr ""
+
+#: public/build/js/app.js:28888
+msgid "The WordPress site timezone can be changed from <a>here</a>."
+msgstr ""
+
+#: public/build/js/app.js:28908
+msgid "Use ClickSocial account timezone"
+msgstr ""
+
+#: public/build/js/app.js:28923
+msgid "Use this WordPress websites's timezone."
+msgstr ""
+
+#: public/build/js/app.js:28932
+msgid "Save changes"
+msgstr ""
+
+#: public/build/js/app.js:28976
+msgid "Dashboard"
+msgstr ""
+
+#: public/build/js/app.js:29419
+msgid "Your post has unsaved changes"
+msgstr ""
+
+#: public/build/js/app.js:29420
+msgid "Are you sure you want to leave without saving?"
+msgstr ""
+
+#: public/build/js/app.js:29421
+msgid "Back to Editor"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2377
+msgid "Add to Template"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2388
+msgid "Display accounts"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2676
+msgid "Share Now (on all %d accounts)"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2676
+#: public/build/js/sidebar-plugin.js:54948
+msgid "Share Now"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2680
+msgid "Save to Drafts (on all %d accounts)"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2680
+msgid "Save to Drafts"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2684
+msgid "Schedule for next slots (on all %d accounts)"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2684
+msgid "Schedule for next slots"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2759
+msgid "No thanks"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:2781
+msgid "Reveal dropdown"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:54997
+msgid "Quick Share enabled for"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:54997
+msgid "social media account"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:54999
+msgid "This social media post will automatically be scheduled when you publish or save the WordPress post."
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:55003
+msgid "Quick Share is disabled for this post"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:55005
+msgid "You can see the social media posts but they will not be scheduled."
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:55011
+msgid "Cancel for this post"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:55016
+msgid "Enable for this post"
+msgstr ""
+
+#: public/build/js/sidebar-plugin.js:55023
+msgid "Share"
+msgstr ""

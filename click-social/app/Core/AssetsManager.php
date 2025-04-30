@@ -20,26 +20,56 @@ class AssetsManager
 	{
 		$this->configs = sbcs_get_config();
 
-		if (false !== sbcs_get_config('features.quick_share')) {	// FeatureFlag: quick_share
+		if (false !== sbcs_get_config('features.quick_share')) {    // FeatureFlag: quick_share
 			if (QuickShareController::getInstance()->isQuickShareEnabled()) {
 				add_action('enqueue_block_editor_assets', [$this, 'enqueueGutenbergSidebar']);
 				add_action('admin_enqueue_scripts', [$this, 'enqueueGutenbergStyles']);
 			}
 		}
 
-		if (! sbcs_is_click_social_page()) {
+		if (!sbcs_is_click_social_page()) {
 			return;
 		}
 
-		add_action('admin_enqueue_scripts', [ $this, 'adminScripts' ]);
+		add_action('admin_enqueue_scripts', [$this, 'adminScripts']);
 	}
 
-	private function setAssetsVersion()
+	public function adminScripts()
 	{
-		if ($this->configs['dev_mode']) {
-			return $this->configs['plugin_version'] . time();
-		}
-		return $this->configs['plugin_version'];
+		$script_handle = sbcs_prefix('admin-js');
+
+		wp_enqueue_style(
+			sbcs_prefix('admin-css'),
+			$this->setAssetsUrl("/build/css/app.css"),
+			[],
+			$this->setAssetsVersion()
+		);
+
+		wp_enqueue_script(
+			$script_handle,
+			$this->setAssetsUrl("/build/js/app.js"),
+			[
+				'jquery',
+				'wp-element',
+				'wp-i18n',
+				'wp-media-utils',
+				'wp-components',
+			],
+			$this->setAssetsVersion(),
+			true
+		);
+
+		wp_enqueue_media();
+
+		$this->adminAjax($script_handle);
+
+		wp_set_script_translations(
+			$script_handle,
+			'click-social',
+			SBCS_DIR_PATH . '/languages'
+		);
+
+		wp_enqueue_script($script_handle);
 	}
 
 	private function setAssetsUrl($path)
@@ -50,26 +80,12 @@ class AssetsManager
 		return sbcs_asset_url($path);
 	}
 
-	public function adminScripts()
+	private function setAssetsVersion()
 	{
-		wp_enqueue_style(
-			sbcs_prefix('admin-css'),
-			$this->setAssetsUrl("/build/css/app.css"),
-			[],
-			$this->setAssetsVersion()
-		);
-
-		wp_enqueue_script(
-			sbcs_prefix('admin-js'),
-			$this->setAssetsUrl("/build/js/app.js"),
-			[],
-			$this->setAssetsVersion(),
-			true
-		);
-
-		wp_enqueue_media();
-
-		$this->adminAjax(sbcs_prefix('admin-js'));
+		if ($this->configs['dev_mode']) {
+			return $this->configs['plugin_version'] . time();
+		}
+		return $this->configs['plugin_version'];
 	}
 
 	public function adminAjax($handle)
@@ -79,7 +95,7 @@ class AssetsManager
 			'sbcsAdmin',
 			[
 				'ajaxUrl' => admin_url('admin-ajax.php'),
-				'nonce'   => wp_create_nonce('sbcsAdminNonce'),
+				'nonce' => wp_create_nonce('sbcsAdminNonce'),
 				'pluginUrl' => SBCS_PLUGIN_URL,
 				'pluginDir' => SBCS_DIR_PATH,
 				// FeatureFlags
@@ -92,50 +108,64 @@ class AssetsManager
 		);
 	}
 
+	/**
+	 * Enqueue Gutenberg sidebar assets and translations.
+	 *
+	 * @since 1.0.0
+	 */
 	public function enqueueGutenbergSidebar()
 	{
-		if (! QuickShareController::getInstance()->memberPermissions()) {
+		if (!QuickShareController::getInstance()->memberPermissions()) {
 			return;
 		}
 
-		if (
-			function_exists('get_current_screen') &&
-			! empty(get_current_screen()->base) &&
-			'post' === get_current_screen()->base &&
-			'post' === get_current_screen()->id
-		) {
-			wp_enqueue_script(
-				sbcs_prefix('gutenberg-sidebar'),
-				$this->setAssetsUrl('/build/js/sidebar-plugin.js'),
-				['wp-plugins', 'wp-edit-post'],
-				$this->setAssetsVersion(),
-				[
-					'in_footer' => true,
-				]
-			);
-
-			$this->adminAjax(sbcs_prefix('gutenberg-sidebar'));
+		$screen = get_current_screen();
+		if (!$screen || 'post' !== $screen->base || 'post' !== $screen->id) {
+			return;
 		}
+
+		$script_handle = sbcs_prefix('gutenberg-sidebar');
+
+		wp_enqueue_script(
+			$script_handle,
+			$this->setAssetsUrl('/build/js/sidebar-plugin.js'),
+			['wp-plugins', 'wp-edit-post', 'wp-i18n', 'wp-element', 'media-upload'],
+			$this->setAssetsVersion(),
+			['in_footer' => true]
+		);
+
+		wp_set_script_translations(
+			$script_handle,
+			'click-social',
+			SBCS_DIR_PATH . '/languages'
+		);
+
+		$this->adminAjax($script_handle);
 	}
 
+
+	/**
+	 * Enqueue Gutenberg sidebar styles.
+	 *
+	 * @since 1.0.0
+	 */
 	public function enqueueGutenbergStyles()
 	{
-		if (! QuickShareController::getInstance()->memberPermissions()) {
+		if (!QuickShareController::getInstance()->memberPermissions()) {
 			return;
 		}
 
-		if (
-			function_exists('get_current_screen') &&
-			! empty(get_current_screen()->base) &&
-			'post' === get_current_screen()->base &&
-			'post' === get_current_screen()->id
-		) {
-			wp_enqueue_style(
-				sbcs_prefix('gutenberg-sidebar-css'),
-				$this->setAssetsUrl('/build/css/custom-sidebar.css'),
-				[],
-				$this->setAssetsVersion()
-			);
+		$screen = get_current_screen();
+		if (!$screen || 'post' !== $screen->base || 'post' !== $screen->id) {
+			return;
 		}
+
+		wp_enqueue_style(
+			sbcs_prefix('gutenberg-sidebar-css'),
+			$this->setAssetsUrl('/build/css/custom-sidebar.css'),
+			[],
+			$this->setAssetsVersion()
+		);
 	}
+
 }

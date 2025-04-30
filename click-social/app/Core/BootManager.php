@@ -4,13 +4,13 @@ namespace Smashballoon\ClickSocial\App\Core;
 
 if (!defined('ABSPATH')) exit;
 
-use Smashballoon\ClickSocial\App\Controllers\CalendarController;
 use Smashballoon\ClickSocial\App\Controllers\WPRestApiController;
 use Smashballoon\ClickSocial\App\Core\Lib\SingleTon;
 use Smashballoon\ClickSocial\App\Services\ActivationService;
 use Smashballoon\ClickSocial\App\Services\DeactivationService;
 use Smashballoon\ClickSocial\App\Services\ShortlinkHandlerService;
 use Smashballoon\ClickSocial\App\Services\TemplateShortcodesService;
+use Smashballoon\ClickSocial\App\Services\TranslationService;
 
 class BootManager
 {
@@ -54,6 +54,7 @@ class BootManager
 			AdminRouteManager::class,
 			TemplateShortcodesService::class,
 			ShortlinkHandlerService::class,
+			TranslationService::class
 		);
 	}
 
