@@ -6,7 +6,7 @@ Tags: social media, scheduler, x, facebook, click social
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable Tag: 1.2.0
+Stable Tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,9 @@ A: Absolutely. ClickSocial allows you to customize the scheduling for each socia
 A: We officially refer to ourselves as ClickSocial though we also refer to it as Click Social in our terms of service and other areas.
 
 == Changelog ==
+
+= 1.2.1 =
+* Fix: enforced exact character limits for posting content on all supported social networks
 
 = 1.2.0 =
 * New: added support for connecting to LinkedIn and posting to user feeds

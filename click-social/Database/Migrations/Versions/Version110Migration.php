@@ -84,6 +84,8 @@ class Version110Migration
 		// Update all WordPress posts with new quickshare templates.
 		global $wpdb;
 
+		// phpcs:disable WordPress.DB.DirectDatabaseQuery.DirectQuery -- Runs only once on plugin upgrade.
+		// phpcs:disable WordPress.DB.DirectDatabaseQuery.NoCaching -- Runs only once on plugin upgrade.
 		$posts = $wpdb->get_results(
 			$wpdb->prepare(
 				"SELECT post_id, meta_key
@@ -93,6 +95,8 @@ class Version110Migration
 			),
 			ARRAY_A
 		);
+		// phpcs:enable WordPress.DB.DirectDatabaseQuery.NoCaching
+		// phpcs:enable WordPress.DB.DirectDatabaseQuery.DirectQuery
 
 		if (!$posts) {
 			return;

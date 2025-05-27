@@ -3,7 +3,7 @@
         'name' => 'smashballoon/clicksocial-wp',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e2866835f51a384ee94473d31fd93899e16d6fdf',
+        'reference' => '884cda0573c26f8f66fb03cd1b52f74c79271372',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'smashballoon/clicksocial-wp' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e2866835f51a384ee94473d31fd93899e16d6fdf',
+            'reference' => '884cda0573c26f8f66fb03cd1b52f74c79271372',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
