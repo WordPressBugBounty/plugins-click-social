@@ -1,0 +1,36 @@
+<svg width="329" height="361" viewBox="0 0 329 361" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity="0.1" filter="url(#filter0_f_4996_29322)">
+        <circle cx="80" cy="88" r="134" fill="#0096CC"/>
+    </g>
+    <g opacity="0.1" filter="url(#filter1_f_4996_29322)">
+        <circle cx="233" cy="114" r="134" fill="#76C064"/>
+    </g>
+    <g opacity="0.1" filter="url(#filter2_f_4996_29322)">
+        <circle cx="256" cy="236" r="134" fill="#43A6DB"/>
+    </g>
+    <g opacity="0.1" filter="url(#filter3_f_4996_29322)">
+        <circle cx="71" cy="315" r="134" fill="#59AB46"/>
+    </g>
+    <defs>
+        <filter id="filter0_f_4996_29322" x="-162" y="-154" width="484" height="484" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="54" result="effect1_foregroundBlur_4996_29322"/>
+        </filter>
+        <filter id="filter1_f_4996_29322" x="-9" y="-128" width="484" height="484" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="54" result="effect1_foregroundBlur_4996_29322"/>
+        </filter>
+        <filter id="filter2_f_4996_29322" x="14" y="-6" width="484" height="484" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="54" result="effect1_foregroundBlur_4996_29322"/>
+        </filter>
+        <filter id="filter3_f_4996_29322" x="-171" y="73" width="484" height="484" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="54" result="effect1_foregroundBlur_4996_29322"/>
+        </filter>
+    </defs>
+</svg>

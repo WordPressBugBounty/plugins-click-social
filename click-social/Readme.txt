@@ -6,7 +6,7 @@ Tags: social media, scheduler, x, facebook, click social
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable Tag: 1.2.1
+Stable Tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,13 @@ A: Absolutely. ClickSocial allows you to customize the scheduling for each socia
 A: We officially refer to ourselves as ClickSocial though we also refer to it as Click Social in our terms of service and other areas.
 
 == Changelog ==
+
+= 1.3.0 =
+* New: added category filters and post count limits for WordPress posts when creating or editing Revival Campaigns
+* Tweak: enhanced performance during filtering and creation of Revival Campaigns
+* Tweak: refined UI on the Revival Campaign setup screens
+* Fix: resolved issue where social posts were not generated through Revival Campaigns
+* Fix: included missing link to the ClickSocial documentation
 
 = 1.2.1 =
 * Fix: enforced exact character limits for posting content on all supported social networks

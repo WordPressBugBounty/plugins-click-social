@@ -8,7 +8,7 @@ return array (
 	'plugin_prefix' => 'sbcs',
 	'plugin_slug' => 'sbcs',
 	'namaspace_root' => 'Smashballoon\ClickSocial',
-	'plugin_version' => '1.2.1',
+	'plugin_version' => '1.3.0',
 	'plugin_name' => 'ClickSocial - Social Media Scheduler & Poster',
 	'dev_mode' => sbcs_get_env('DEV_MODE'),
 	'root_dir' => dirname(__DIR__),

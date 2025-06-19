@@ -38,6 +38,18 @@ class Http
 	}
 
 	/**
+	 * Get the default arguments for wp_remote_... requests.
+	 *
+	 * @return array
+	 */
+	private static function getDefaultArguments()
+	{
+		return [
+			'timeout' => 30,
+		];
+	}
+
+	/**
 	 * POST request
 	 *
 	 * @param (string) $route
@@ -47,7 +59,7 @@ class Http
 	 */
 	public static function post($route, $args = [], $get_params = [])
 	{
-		$default   = [];
+		$default   = static::getDefaultArguments();
 		$arguments = array_merge($default, $args);
 		$url       = static::get_url($route, $get_params);
 
@@ -69,7 +81,7 @@ class Http
 	 */
 	public static function get($route, $args = [], $get_params = [])
 	{
-		$default   = [];
+		$default   = static::getDefaultArguments();
 		$args      = is_array($args) ? $args : [];
 		$arguments = array_merge($default, $args);
 		$url       = static::get_url($route, $get_params);
@@ -93,7 +105,7 @@ class Http
 	 */
 	public static function put($route, $args = [], $get_params = [])
 	{
-		$default   = [];
+		$default   = static::getDefaultArguments();
 		$arguments = array_merge($default, $args);
 		$url       = static::get_url($route, $get_params);
 
@@ -115,7 +127,7 @@ class Http
 	 */
 	public static function delete($route, $args = [], $get_params = [])
 	{
-		$default   = [];
+		$default   = static::getDefaultArguments();
 		$arguments = array_merge($default, $args);
 		$url       = static::get_url($route, $get_params);
 

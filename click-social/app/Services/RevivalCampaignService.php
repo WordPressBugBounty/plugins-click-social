@@ -79,6 +79,8 @@ class RevivalCampaignService
 		// Flatten templates array for easy filtering.
 		$indexedTemplates = wp_list_pluck($campaignSettings['filter_data']['templates'], 'template', 'uuid');
 
+		// Generate posts for each account separately.
+		$accountPosts = [];
 		foreach ($campaignSettings['filter_data']['selected_accounts'] as $social_account_uuid) {
 			$templateContent = $indexedTemplates[$social_account_uuid];
 
@@ -91,7 +93,21 @@ class RevivalCampaignService
 				$social_account_uuid
 			);
 
-			$scheduledPosts = array_merge($scheduledPosts, $posts);
+			$accountPosts[$social_account_uuid] = $posts;
+		}
+
+		// Round-robin merge: pick one from each account, then repeat.
+		// Mixing the posts from all selected social networks allows equal distribution
+		// of posts, even if the revival campaign post limit is reached.
+		$maxPosts = max(array_map('count', $accountPosts));
+		$accountKeys = array_keys($accountPosts);
+
+		for ($i = 0; $i < $maxPosts; $i++) {
+			foreach ($accountKeys as $accountUuid) {
+				if (isset($accountPosts[$accountUuid][$i])) {
+					$scheduledPosts[] = $accountPosts[$accountUuid][$i];
+				}
+			}
 		}
 
 		return $scheduledPosts;

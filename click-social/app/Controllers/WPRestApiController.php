@@ -2,21 +2,11 @@
 
 namespace Smashballoon\ClickSocial\App\Controllers;
 
-use Couchbase\Role;
 use Smashballoon\ClickSocial\App\Core\AccountManager;
 use Smashballoon\ClickSocial\App\Core\ErrorMessage;
-use Smashballoon\ClickSocial\App\Core\ErrorMessages;
-use Smashballoon\ClickSocial\App\Core\Lib\AuthHttp;
-use Smashballoon\ClickSocial\App\Core\Lib\Http;
 use Smashballoon\ClickSocial\App\Core\Lib\SingleTon;
 use Smashballoon\ClickSocial\App\Core\SettingsManager;
-use Smashballoon\ClickSocial\App\Enums\QuickShareAction;
-use Smashballoon\ClickSocial\App\Enums\WpUserCapabilities;
-use Smashballoon\ClickSocial\App\Enums\WpUserRoles;
-use Smashballoon\ClickSocial\App\Services\MemberTransaction;
 use Smashballoon\ClickSocial\App\Services\QuickShareService;
-use Smashballoon\ClickSocial\App\Services\SocialAccountService;
-use Smashballoon\ClickSocial\App\Services\TemplateShortcodesService;
 use WP_User_Query;
 
 if (!defined('ABSPATH')) {
@@ -78,10 +68,18 @@ class WPRestApiController extends BaseController
 				'route' => '/v1/get-users',
 				'methods' => \WP_REST_Server::READABLE,
 				'callback' => [ $this, 'getUsers' ],
-				'permission_callback' => function ($request) {
+				'permission_callback' => function () {
 					return current_user_can('manage_options') || current_user_can('edit_users');
 				}
-			]
+			],
+			[
+				'route' => '/v1/optimized-posts',
+				'methods' => \WP_REST_Server::READABLE,
+				'callback' => [ $this, 'getOptimizedPosts' ],
+				'permission_callback' => function () {
+					return current_user_can('manage_options') || current_user_can('edit_posts');
+				}
+			],
 		];
 
 		foreach ($routesData as $route) {
@@ -283,5 +281,123 @@ class WPRestApiController extends BaseController
 
 		// Send final templates to Laravel API.
 		return new \WP_REST_Response($postTemplates, 200);
+	}
+
+	private function buildBaseArgs()
+	{
+		return [
+			'posts_per_page' => 100,
+			'post_status' => 'publish',
+			'orderby' => 'date',
+			'order' => 'DESC',
+		];
+	}
+
+	private function handleSearchArgs($params, $args)
+	{
+		if (!empty($params['search'])) {
+			$args['s'] = sanitize_text_field($params['search']);
+		}
+		return $args;
+	}
+
+	private function handleDateArgs($params, $args)
+	{
+		if (!empty($params['exclude_dates'])) {
+			$args['date_query'] = [
+				'relation' => 'OR',
+				[
+					'before' => sanitize_text_field($params['exclude_dates']['start']),
+				],
+				[
+					'after' => sanitize_text_field($params['exclude_dates']['end']),
+				],
+			];
+		} elseif (!empty($params['after']) || !empty($params['before'])) {
+			$args['date_query'] = [
+				'inclusive' => true
+			];
+			if (!empty($params['after'])) {
+				$args['date_query']['after'] = sanitize_text_field($params['after']);
+			}
+			if (!empty($params['before'])) {
+				$args['date_query']['before'] = sanitize_text_field($params['before']);
+			}
+		}
+
+		return $args;
+	}
+
+	private function handleTaxonomyArgs($params)
+	{
+		$tax_query = [];
+
+		// Categories
+		if (!empty($params['categories_exclude'])) {
+			$tax_query[] = $this->buildTaxQuery('category', $params['categories_exclude'], 'NOT IN');
+		} elseif (!empty($params['categories'])) {
+			$tax_query[] = $this->buildTaxQuery('category', $params['categories'], 'IN');
+		}
+
+		// Tags
+		if (!empty($params['tags_exclude'])) {
+			$tax_query[] = $this->buildTaxQuery('post_tag', $params['tags_exclude'], 'NOT IN');
+		} elseif (!empty($params['tags'])) {
+			$tax_query[] = $this->buildTaxQuery('post_tag', $params['tags'], 'IN');
+		}
+
+		return $tax_query;
+	}
+
+	private function buildTaxQuery($taxonomy, $terms, $operator)
+	{
+		return [
+			'taxonomy' => $taxonomy,
+			'terms' => array_map('absint', explode(',', $terms)),
+			'operator' => $operator
+		];
+	}
+
+	private function handleAuthorArgs($params, $args)
+	{
+		if (!empty($params['author'])) {
+			$args['author__in'] = array_map('absint', explode(',', $params['author']));
+		} elseif (!empty($params['author_exclude'])) {
+			$args['author__not_in'] = array_map('absint', explode(',', $params['author_exclude']));
+		}
+		return $args;
+	}
+
+	private function formatPosts($posts)
+	{
+		return array_map(function ($post) {
+			return [
+				'id' => $post->ID,
+				'title' => ['rendered' => get_the_title($post)],
+				'date' => get_the_date('c', $post),
+				'link' => get_permalink($post),
+			];
+		}, $posts);
+	}
+
+	public function getOptimizedPosts($request)
+	{
+		$params = $request->get_params();
+		$args = $this->buildBaseArgs();
+
+		$args = $this->handleSearchArgs($params, $args);
+		$args = $this->handleDateArgs($params, $args);
+
+		$tax_query = $this->handleTaxonomyArgs($params);
+		if (!empty($tax_query)) {
+			$args['tax_query'] = $tax_query;
+		}
+
+		$args = $this->handleAuthorArgs($params, $args);
+
+		$query = new \WP_Query($args);
+		$posts = $this->formatPosts($query->posts);
+
+		return new \WP_REST_Response($posts, 200);
 	}
 }
