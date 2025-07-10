@@ -7,7 +7,7 @@
  * Plugin Name: ClickSocial - Social Media Scheduler & Poster
  * Plugin URI: https://clicksocial.com
  * Description: Effortlessly manage your social media presence directly within WordPress. This plugin allows you to connect with the ClickSocial application available on clicksocial.com. After creating and connecting an account on clicksocial.com, you can create social media posts and schedule them right from the WordPress dashboard.
- * Version: 1.3.0
+ * Version: 1.3.1
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Author: Smash Balloon
